@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<project name="SiLAV" company="Innsware" manager="" phase="" project-start="20130730T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Jornada laboral" description="Un d&#xED;a de trabajo predeterminado"/>
+      <day-type id="1" name="Jornada de descanso" description="Un d&#xED;a de descanso predeterminado"/>
+      <day-type id="2" name="Usar base" description="Usar d&#xED;a del calendario base"/>
+    </day-types>
+    <calendar id="1" name="SiLAV">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="0" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+    <calendar id="2" name="Predeterminado">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Identificar problema" note="" work="14400" start="20130730T000000Z" end="20130730T120000Z" work-start="20130730T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Elaborar estudio de mercado" note="" work="28800" start="20130730T120000Z" end="20130801T120000Z" work-start="20130731T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="3" name="Proponer soluci&#xF3;n" note="" work="14400" start="20130801T120000Z" end="20130802T120000Z" work-start="20130802T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="Definir alcance del proyecto" note="" work="14400" start="20130802T120000Z" end="20130803T120000Z" work-start="20130803T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="5" name="Determinar factibilidad" note="" work="14400" start="20130802T120000Z" end="20130803T120000Z" work-start="20130803T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="6" name="Definir metodolog&#xED;a" note="" work="28800" start="20130803T120000Z" end="20130806T120000Z" work-start="20130805T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="7" name="Adaptar metodolog&#xED;a al proyecto" note="" work="28800" start="20130806T120000Z" end="20130808T120000Z" work-start="20130807T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="8" name="Inicio" note="" work="216000" start="20130808T120000Z" end="20130824T120000Z" work-start="20130809T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="9" name="Modelo" note="" work="57600" start="20130808T120000Z" end="20130813T120000Z" work-start="20130809T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="10" name="Definir requerimientos a alto nivel" note="" work="14400" start="20130808T120000Z" end="20130809T120000Z" work-start="20130809T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="11" name="Realizar modelo de arquitectura a alto nivel" note="" work="43200" start="20130809T120000Z" end="20130813T120000Z" work-start="20130810T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="10" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="12" name="Test" note="" work="28800" start="20130813T120000Z" end="20130815T120000Z" work-start="20130814T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Definir plan de testing" note="" work="28800" start="20130813T120000Z" end="20130815T120000Z" work-start="20130814T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="14" name="Gesti&#xF3;n de configuraci&#xF3;n" note="" work="57600" start="20130815T120000Z" end="20130820T120000Z" work-start="20130816T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="15" name="Investigar herramientas a utilizar" note="" work="43200" start="20130815T120000Z" end="20130819T120000Z" work-start="20130816T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="16" name="Preparar entorno de configuraci&#xF3;n" note="" work="14400" start="20130819T120000Z" end="20130820T120000Z" work-start="20130820T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="15" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="17" name="Gesti&#xF3;n de proyecto" note="" work="57600" start="20130820T120000Z" end="20130824T120000Z" work-start="20130821T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="18" name="Definir plan de gesti&#xF3;n de riesgos" note="" work="28800" start="20130820T120000Z" end="20130822T120000Z" work-start="20130821T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="19" name="Gestionar riesgos" note="" work="14400" start="20130822T120000Z" end="20130823T120000Z" work-start="20130823T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="18" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="20" name="Verificar cumplimiento de los objetivos de la fase" note="" work="14400" start="20130823T120000Z" end="20130824T120000Z" work-start="20130824T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="19" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="21" name="Entorno" note="" work="14400" start="20130823T120000Z" end="20130824T120000Z" work-start="20130824T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="22" name="Instalar y configurar herramientas de software" note="" work="14400" start="20130823T120000Z" end="20130824T120000Z" work-start="20130824T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="19" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="23" name="Elaboraci&#xF3;n" note="" work="648000" start="20130824T120000Z" end="20131015T120000Z" work-start="20130826T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="24" name="Subproyecto AppWeb" note="" work="115200" start="20130824T120000Z" end="20130903T120000Z" work-start="20130826T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="25" name="Modelo" note="" work="43200" start="20130824T120000Z" end="20130828T120000Z" work-start="20130826T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="26" name="Especificar requerimientos" note="" work="14400" start="20130824T120000Z" end="20130826T120000Z" work-start="20130826T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="20" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="27" name="Realizar modelo de casos de uso" note="" work="14400" start="20130826T120000Z" end="20130827T120000Z" work-start="20130827T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="26" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="28" name="Realizar prototipo de Interfaz de usuario" note="" work="14400" start="20130827T120000Z" end="20130828T120000Z" work-start="20130828T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="27" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="29" name="Gesti&#xF3;n de proyecto" note="" work="72000" start="20130828T120000Z" end="20130903T120000Z" work-start="20130829T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="30" name="Investigar tecnolog&#xED;a a utilizar" note="" work="72000" start="20130828T120000Z" end="20130903T120000Z" work-start="20130829T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="28" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="31" name="Subproyecto AppMoviles" note="" work="115200" start="20130903T120000Z" end="20130912T120000Z" work-start="20130904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="32" name="Modelo" note="" work="43200" start="20130903T120000Z" end="20130906T120000Z" work-start="20130904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="33" name="Especificar requerimientos" note="" work="14400" start="20130903T120000Z" end="20130904T120000Z" work-start="20130904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="30" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="34" name="Realizar modelo de casos de uso" note="" work="14400" start="20130904T120000Z" end="20130905T120000Z" work-start="20130905T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="33" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="35" name="Realizar prototipo de interfaz de usuario" note="" work="14400" start="20130905T120000Z" end="20130906T120000Z" work-start="20130906T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="34" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="36" name="Gesti&#xF3;n de proyecto" note="" work="72000" start="20130906T120000Z" end="20130912T120000Z" work-start="20130907T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="37" name="Investigar tecnolog&#xED;a a utilizar" note="" work="72000" start="20130906T120000Z" end="20130912T120000Z" work-start="20130907T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="35" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="38" name="Subproyecto WebService" note="" work="100800" start="20130912T120000Z" end="20130920T120000Z" work-start="20130913T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="39" name="Modelo" note="" work="28800" start="20130912T120000Z" end="20130914T120000Z" work-start="20130913T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="40" name="Especificar requerimientos" note="" work="14400" start="20130912T120000Z" end="20130913T120000Z" work-start="20130913T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="37" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="41" name="Realizar modelo de casos de uso" note="" work="14400" start="20130913T120000Z" end="20130914T120000Z" work-start="20130914T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="40" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="42" name="Gesti&#xF3;n de proyecto" note="" work="72000" start="20130914T120000Z" end="20130920T120000Z" work-start="20130916T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="43" name="Investigar tecnolog&#xED;a a utilizar" note="" work="72000" start="20130914T120000Z" end="20130920T120000Z" work-start="20130916T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="41" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="44" name="Subproyecto AppControlPasaje" note="" work="100800" start="20130920T120000Z" end="20130928T120000Z" work-start="20130921T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="45" name="Modelo" note="" work="28800" start="20130920T120000Z" end="20130923T120000Z" work-start="20130921T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="46" name="Especificar requerimientos" note="" work="14400" start="20130920T120000Z" end="20130921T120000Z" work-start="20130921T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="43" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="47" name="Realizar modelo de casos de uso" note="" work="14400" start="20130921T120000Z" end="20130923T120000Z" work-start="20130923T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="46" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="48" name="Gesti&#xF3;n de proyecto" note="" work="72000" start="20130923T120000Z" end="20130928T120000Z" work-start="20130924T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="49" name="Investigar tecnolog&#xED;a a utilizar" note="" work="72000" start="20130923T120000Z" end="20130928T120000Z" work-start="20130924T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="47" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="50" name="Subproyecto AppUsuarios" note="" work="43200" start="20130928T120000Z" end="20131002T120000Z" work-start="20130930T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="51" name="Modelo" note="" work="43200" start="20130928T120000Z" end="20131002T120000Z" work-start="20130930T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="52" name="Especificar requerimientos" note="" work="14400" start="20130928T120000Z" end="20130930T120000Z" work-start="20130930T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="49" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="53" name="Realizar modelo de casos de uso" note="" work="14400" start="20130930T120000Z" end="20131001T120000Z" work-start="20131001T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="52" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="54" name="Realizar prototipos de interfaz" note="" work="14400" start="20131001T120000Z" end="20131002T120000Z" work-start="20131002T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="53" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+      <task id="55" name="Integraci&#xF3;n" note="" work="172800" start="20131002T120000Z" end="20131015T120000Z" work-start="20131003T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="56" name="Modelo" note="" work="28800" start="20131002T120000Z" end="20131004T120000Z" work-start="20131003T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="57" name="Detallar modelo de arquitectura" note="" work="28800" start="20131002T120000Z" end="20131004T120000Z" work-start="20131003T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="54" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="58" name="Implementaci&#xF3;n" note="" work="43200" start="20131004T120000Z" end="20131008T120000Z" work-start="20131005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="59" name="Implementar interfaces de comunicaci&#xF3;n" note="" work="43200" start="20131004T120000Z" end="20131008T120000Z" work-start="20131005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="57" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="60" name="Test" note="" work="28800" start="20131008T120000Z" end="20131010T120000Z" work-start="20131009T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="61" name="Validar arquitectura" note="" work="14400" start="20131008T120000Z" end="20131009T120000Z" work-start="20131009T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="62" name="Actualizar plan de testing" note="" work="14400" start="20131009T120000Z" end="20131010T120000Z" work-start="20131010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="61" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="63" name="Despliegue" note="" work="28800" start="20131010T120000Z" end="20131012T120000Z" work-start="20131011T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="64" name="Realizar plan de despliegue" note="" work="28800" start="20131010T120000Z" end="20131012T120000Z" work-start="20131011T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="62" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="65" name="Gesti&#xF3;n de proyecto" note="" work="43200" start="20131012T120000Z" end="20131015T120000Z" work-start="20131014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="66" name="Gestionar riesgos" note="" work="14400" start="20131012T120000Z" end="20131014T120000Z" work-start="20131014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="64" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="67" name="Verificar cumplimiento de objetivos de fase" note="" work="14400" start="20131014T120000Z" end="20131015T120000Z" work-start="20131015T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="66" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="68" name="Actualizar planificaci&#xF3;n" note="" work="14400" start="20131014T120000Z" end="20131015T120000Z" work-start="20131015T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="66" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+      </task>
+    </task>
+    <task id="69" name="Construcci&#xF3;n" note="" work="9043200" start="20131015T120000Z" end="20151119T120000Z" work-start="20131016T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="70" name="Iteraci&#xF3;n 1" note="" work="1267200" start="20131015T120000Z" end="20140220T120000Z" work-start="20131016T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="71" name="Subproyecto AppWeb" note="" work="316800" start="20131015T120000Z" end="20131109T120000Z" work-start="20131016T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="72" name="Modelo" note="" work="115200" start="20131015T120000Z" end="20131024T120000Z" work-start="20131016T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="73" name="Detallar casos de uso" note="" work="14400" start="20131015T120000Z" end="20131016T120000Z" work-start="20131016T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="68" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="74" name="Realizar diagramas de estructura" note="" work="43200" start="20131016T120000Z" end="20131019T120000Z" work-start="20131017T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="73" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="75" name="Realizar diagramas de comportamiento" note="" work="43200" start="20131019T120000Z" end="20131023T120000Z" work-start="20131021T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="74" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="76" name="Actualizar prototipo de interfaz de usuario" note="" work="14400" start="20131023T120000Z" end="20131024T120000Z" work-start="20131024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="75" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="77" name="Implementaci&#xF3;n" note="" work="144000" start="20131024T120000Z" end="20131105T120000Z" work-start="20131025T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="78" name="Generar c&#xF3;digo" note="" work="144000" start="20131024T120000Z" end="20131105T120000Z" work-start="20131025T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="76" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="79" name="Test" note="" work="28800" start="20131105T120000Z" end="20131107T120000Z" work-start="20131106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="80" name="Definir casos de prueba" note="" work="28800" start="20131105T120000Z" end="20131107T120000Z" work-start="20131106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="78" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="81" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20131107T120000Z" end="20131109T120000Z" work-start="20131108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="82" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20131107T120000Z" end="20131109T120000Z" work-start="20131108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="80" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="83" name="Subproyecto AppMoviles" note="" work="316800" start="20131109T120000Z" end="20131205T120000Z" work-start="20131111T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="84" name="Modelo" note="" work="115200" start="20131109T120000Z" end="20131119T120000Z" work-start="20131111T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="85" name="Detallar casos de uso" note="" work="14400" start="20131109T120000Z" end="20131111T120000Z" work-start="20131111T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="82" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="86" name="Realizar diagramas de estructura" note="" work="43200" start="20131111T120000Z" end="20131114T120000Z" work-start="20131112T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="85" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="87" name="Realizar diagramas de comportamiento" note="" work="43200" start="20131114T120000Z" end="20131118T120000Z" work-start="20131115T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="86" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="88" name="Actualizar prototipo de interfaz de usuario" note="" work="14400" start="20131118T120000Z" end="20131119T120000Z" work-start="20131119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="87" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="89" name="Implementaci&#xF3;n" note="" work="144000" start="20131119T120000Z" end="20131130T120000Z" work-start="20131120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="90" name="Generar c&#xF3;digo" note="" work="144000" start="20131119T120000Z" end="20131130T120000Z" work-start="20131120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="88" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="91" name="Test" note="" work="28800" start="20131130T120000Z" end="20131203T120000Z" work-start="20131202T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="92" name="Definir casos de prueba" note="" work="28800" start="20131130T120000Z" end="20131203T120000Z" work-start="20131202T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="90" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="93" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20131203T120000Z" end="20131205T120000Z" work-start="20131204T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="94" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20131203T120000Z" end="20131205T120000Z" work-start="20131204T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="92" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="95" name="Subproyecto WebService" note="" work="259200" start="20131205T120000Z" end="20140121T120000Z" work-start="20131206T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="96" name="Modelo" note="" work="100800" start="20131205T120000Z" end="20140108T120000Z" work-start="20131206T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="97" name="Detallar casos de uso" note="" work="14400" start="20131205T120000Z" end="20131206T120000Z" work-start="20131206T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="94" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="98" name="Realizar diagramas de estructura" note="" work="43200" start="20131206T120000Z" end="20131210T120000Z" work-start="20131207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="97" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="99" name="Realizar diagramas de comportamiento" note="" work="43200" start="20140106T000000Z" end="20140108T120000Z" work-start="20140106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <constraint type="must-start-on" time="20140106T000000Z"/>
+            </task>
+          </task>
+          <task id="100" name="Implementaci&#xF3;n" note="" work="100800" start="20140108T120000Z" end="20140116T120000Z" work-start="20140109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="101" name="Generar c&#xF3;digo" note="" work="100800" start="20140108T120000Z" end="20140116T120000Z" work-start="20140109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="99" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="102" name="Test" note="" work="28800" start="20140116T120000Z" end="20140118T120000Z" work-start="20140117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="103" name="Definir casos de prueba" note="" work="28800" start="20140116T120000Z" end="20140118T120000Z" work-start="20140117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="101" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="104" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20140118T120000Z" end="20140121T120000Z" work-start="20140120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="105" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20140118T120000Z" end="20140121T120000Z" work-start="20140120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="103" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="106" name="Subproyecto AppControlPasaje" note="" work="244800" start="20140121T120000Z" end="20140210T120000Z" work-start="20140122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="107" name="Modelo" note="" work="100800" start="20140121T120000Z" end="20140129T120000Z" work-start="20140122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="108" name="Detallar casos de uso" note="" work="14400" start="20140121T120000Z" end="20140122T120000Z" work-start="20140122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="105" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="109" name="Realizar diagramas de estructura" note="" work="43200" start="20140122T120000Z" end="20140125T120000Z" work-start="20140123T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="108" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="110" name="Realizar diagramas de comportamiento" note="" work="43200" start="20140125T120000Z" end="20140129T120000Z" work-start="20140127T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="109" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="111" name="Implementaci&#xF3;n" note="" work="100800" start="20140129T120000Z" end="20140206T120000Z" work-start="20140130T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="112" name="Generar c&#xF3;digo" note="" work="100800" start="20140129T120000Z" end="20140206T120000Z" work-start="20140130T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="110" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="113" name="Test" note="" work="28800" start="20140206T120000Z" end="20140208T120000Z" work-start="20140207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="114" name="Definir casos de prueba" note="" work="28800" start="20140206T120000Z" end="20140208T120000Z" work-start="20140207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="112" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="115" name="Gesti&#xF3;n de proyecto" note="" work="14400" start="20140208T120000Z" end="20140210T120000Z" work-start="20140210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="116" name="Investigar tecnolog&#xED;a a utilizar" note="" work="14400" start="20140208T120000Z" end="20140210T120000Z" work-start="20140210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="114" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="117" name="Integraci&#xF3;n" note="" work="129600" start="20140210T120000Z" end="20140220T120000Z" work-start="20140211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="118" name="Modelo" note="" work="57600" start="20140210T120000Z" end="20140214T120000Z" work-start="20140211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="119" name="Actualizar modelo de arquitectura" note="" work="28800" start="20140210T120000Z" end="20140212T120000Z" work-start="20140211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="116" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="120" name="Definir estructura de base de datos" note="" work="28800" start="20140212T120000Z" end="20140214T120000Z" work-start="20140213T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="119" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="121" name="Implementaci&#xF3;n" note="" work="14400" start="20140214T120000Z" end="20140215T120000Z" work-start="20140215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="122" name="Crear base de datos" note="" work="14400" start="20140214T120000Z" end="20140215T120000Z" work-start="20140215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="120" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="123" name="Test" note="" work="14400" start="20140215T120000Z" end="20140217T120000Z" work-start="20140217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="124" name="Actualizar plan de testing" note="" work="14400" start="20140215T120000Z" end="20140217T120000Z" work-start="20140217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="122" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="125" name="Despliegue" note="" work="14400" start="20140217T120000Z" end="20140218T120000Z" work-start="20140218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="126" name="Actualizar plan de despliegue" note="" work="14400" start="20140217T120000Z" end="20140218T120000Z" work-start="20140218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="124" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="127" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20140218T120000Z" end="20140220T120000Z" work-start="20140219T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="128" name="Gestionar riesgos" note="" work="14400" start="20140218T120000Z" end="20140219T120000Z" work-start="20140219T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="126" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="129" name="Actualizar planificaci&#xF3;n" note="" work="14400" start="20140219T120000Z" end="20140220T120000Z" work-start="20140220T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="128" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="130" name="Interrupci&#xF3;n del proyecto" note="Interrupci&#xF3;n del proyecto debido a asuntos personales de los integrantes del equipo" work="2592000" start="20140220T120000Z" end="20140918T120000Z" work-start="20140221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="129" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="131" name="Iteraci&#xF3;n 2" note="" work="2030400" start="20140918T120000Z" end="20150311T120000Z" work-start="20140919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="132" name="Subproyecto AppWeb" note="" work="460800" start="20140918T120000Z" end="20141025T120000Z" work-start="20140919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="133" name="Modelo" note="" work="72000" start="20140918T120000Z" end="20140924T120000Z" work-start="20140919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="134" name="Actualizar modelo de casos de uso" note="" work="14400" start="20140918T120000Z" end="20140919T120000Z" work-start="20140919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="130" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="135" name="Actualizar diagramas de estructura" note="" work="28800" start="20140919T120000Z" end="20140922T120000Z" work-start="20140920T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="134" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="136" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20140922T120000Z" end="20140924T120000Z" work-start="20140923T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="135" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="137" name="Implementaci&#xF3;n" note="" work="288000" start="20140924T120000Z" end="20141017T120000Z" work-start="20140925T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="138" name="Generar c&#xF3;digo" note="" work="288000" start="20140924T120000Z" end="20141017T120000Z" work-start="20140925T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="136" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="139" name="Test" note="" work="43200" start="20141017T120000Z" end="20141021T120000Z" work-start="20141018T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="140" name="Definir casos de prueba" note="" work="28800" start="20141017T120000Z" end="20141020T120000Z" work-start="20141018T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="138" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="141" name="Ejecutar casos de prueba" note="" work="14400" start="20141020T120000Z" end="20141021T120000Z" work-start="20141021T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="140" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="142" name="Gesti&#xF3;n de proyecto" note="" work="57600" start="20141021T120000Z" end="20141025T120000Z" work-start="20141022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="143" name="Investigar tecnolog&#xED;a a utilizar" note="" work="57600" start="20141021T120000Z" end="20141025T120000Z" work-start="20141022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="141" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="144" name="Subproyecto AppMoviles" note="" work="460800" start="20141025T120000Z" end="20141202T120000Z" work-start="20141027T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="145" name="Modelo" note="" work="72000" start="20141025T120000Z" end="20141031T120000Z" work-start="20141027T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="146" name="Actualizar modelo de casos de uso" note="" work="14400" start="20141025T120000Z" end="20141027T120000Z" work-start="20141027T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="143" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="147" name="Actualizar diagramas de estructura" note="" work="28800" start="20141027T120000Z" end="20141029T120000Z" work-start="20141028T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="146" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="148" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20141029T120000Z" end="20141031T120000Z" work-start="20141030T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="147" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="149" name="Implementaci&#xF3;n" note="" work="288000" start="20141031T120000Z" end="20141124T120000Z" work-start="20141101T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="150" name="Generar c&#xF3;digo" note="" work="288000" start="20141031T120000Z" end="20141124T120000Z" work-start="20141101T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="148" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="151" name="Test" note="" work="43200" start="20141124T120000Z" end="20141127T120000Z" work-start="20141125T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="152" name="Definir casos de prueba" note="" work="28800" start="20141124T120000Z" end="20141126T120000Z" work-start="20141125T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="150" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="153" name="Ejecutar casos de prueba" note="" work="14400" start="20141126T120000Z" end="20141127T120000Z" work-start="20141127T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="152" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="154" name="Gesti&#xF3;n de proyecto" note="" work="57600" start="20141127T120000Z" end="20141202T120000Z" work-start="20141128T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="155" name="Investigar tecnolog&#xED;a a utilizar" note="" work="57600" start="20141127T120000Z" end="20141202T120000Z" work-start="20141128T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="153" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="156" name="Subproyecto WebService" note="" work="388800" start="20141202T120000Z" end="20150112T120000Z" work-start="20141203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="157" name="Modelo" note="" work="72000" start="20141202T120000Z" end="20141208T120000Z" work-start="20141203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="158" name="Actualizar modelo de casos de uso" note="" work="14400" start="20141202T120000Z" end="20141203T120000Z" work-start="20141203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="155" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="159" name="Actualizar diagramas de estructura" note="" work="28800" start="20141203T120000Z" end="20141205T120000Z" work-start="20141204T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="158" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="160" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20141205T120000Z" end="20141208T120000Z" work-start="20141206T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="159" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="161" name="Implementaci&#xF3;n" note="" work="216000" start="20141208T120000Z" end="20141225T120000Z" work-start="20141209T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="162" name="Generar c&#xF3;digo" note="" work="216000" start="20141208T120000Z" end="20141225T120000Z" work-start="20141209T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="160" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="163" name="Test" note="" work="43200" start="20150105T000000Z" end="20150107T120000Z" work-start="20150105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="164" name="Definir casos de prueba" note="" work="28800" start="20150105T000000Z" end="20150106T120000Z" work-start="20150105T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <constraint type="must-start-on" time="20150105T000000Z"/>
+            </task>
+            <task id="165" name="Ejecutar casos de prueba" note="" work="14400" start="20150106T120000Z" end="20150107T120000Z" work-start="20150107T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="164" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="166" name="Gesti&#xF3;n de proyecto" note="" work="57600" start="20150107T120000Z" end="20150112T120000Z" work-start="20150108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="167" name="Investigar tecnolog&#xED;a a utilizar" note="" work="57600" start="20150107T120000Z" end="20150112T120000Z" work-start="20150108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="165" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="168" name="Subproyecto AppControlPasaje" note="" work="374400" start="20150112T120000Z" end="20150211T120000Z" work-start="20150113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="169" name="Modelo" note="" work="72000" start="20150112T120000Z" end="20150117T120000Z" work-start="20150113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="170" name="Actualizar modelo de casos de uso" note="" work="14400" start="20150112T120000Z" end="20150113T120000Z" work-start="20150113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="167" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="171" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150113T120000Z" end="20150115T120000Z" work-start="20150114T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="170" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="172" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150115T120000Z" end="20150117T120000Z" work-start="20150116T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="171" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="173" name="Implementaci&#xF3;n" note="" work="216000" start="20150117T120000Z" end="20150204T120000Z" work-start="20150119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="174" name="Generar c&#xF3;digo" note="" work="216000" start="20150117T120000Z" end="20150204T120000Z" work-start="20150119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="172" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="175" name="Test" note="" work="43200" start="20150204T120000Z" end="20150207T120000Z" work-start="20150205T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="176" name="Definir casos de prueba" note="" work="28800" start="20150204T120000Z" end="20150206T120000Z" work-start="20150205T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="174" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="177" name="Ejecutar casos de prueba" note="" work="14400" start="20150206T120000Z" end="20150207T120000Z" work-start="20150207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="176" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="178" name="Gesti&#xF3;n de proyecto" note="" work="43200" start="20150207T120000Z" end="20150211T120000Z" work-start="20150209T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="179" name="Investigar tecnolog&#xED;a a utilizar" note="" work="43200" start="20150207T120000Z" end="20150211T120000Z" work-start="20150209T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="177" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="180" name="Integraci&#xF3;n" note="" work="345600" start="20150211T120000Z" end="20150311T120000Z" work-start="20150212T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="181" name="Modelo" note="" work="57600" start="20150211T120000Z" end="20150216T120000Z" work-start="20150212T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="182" name="Actualizar modelo de arquitectura" note="" work="28800" start="20150211T120000Z" end="20150213T120000Z" work-start="20150212T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="179" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="183" name="Actualizar estructura de base de datos" note="" work="28800" start="20150213T120000Z" end="20150216T120000Z" work-start="20150214T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="182" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="184" name="Test" note="" work="14400" start="20150216T120000Z" end="20150217T120000Z" work-start="20150217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="185" name="Actualizar plan de testing" note="" work="14400" start="20150216T120000Z" end="20150217T120000Z" work-start="20150217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="183" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="186" name="Despliegue" note="" work="28800" start="20150217T120000Z" end="20150219T120000Z" work-start="20150218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="187" name="Actualizar plan de despliegue" note="" work="28800" start="20150217T120000Z" end="20150219T120000Z" work-start="20150218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="185" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="188" name="Gesti&#xF3;n de proyecto" note="" work="172800" start="20150219T120000Z" end="20150305T120000Z" work-start="20150220T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="189" name="Gestionar riesgos" note="" work="14400" start="20150219T120000Z" end="20150220T120000Z" work-start="20150220T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="187" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="190" name="Actualizar planificaci&#xF3;n" note="" work="14400" start="20150220T120000Z" end="20150221T120000Z" work-start="20150221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="189" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="191" name="Investigar tecnolog&#xED;a" note="" work="144000" start="20150221T120000Z" end="20150305T120000Z" work-start="20150223T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="190" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="192" name="Entorno" note="" work="72000" start="20150305T120000Z" end="20150311T120000Z" work-start="20150306T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="193" name="Configurar servidor virtual (VPS)" note="" work="72000" start="20150305T120000Z" end="20150311T120000Z" work-start="20150306T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="191" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="194" name="Iteraci&#xF3;n 3" note="" work="1627200" start="20150311T120000Z" end="20150721T120000Z" work-start="20150312T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="195" name="Subproyecto AppWeb" note="" work="432000" start="20150311T120000Z" end="20150415T120000Z" work-start="20150312T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="196" name="Modelo" note="" work="72000" start="20150311T120000Z" end="20150317T120000Z" work-start="20150312T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="197" name="Actualizar modelo de casos de uso" note="" work="14400" start="20150311T120000Z" end="20150312T120000Z" work-start="20150312T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="193" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="198" name="Actualizar diagramas de estructura" note="" work="28800" start="20150312T120000Z" end="20150314T120000Z" work-start="20150313T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="197" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="199" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150314T120000Z" end="20150317T120000Z" work-start="20150316T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="198" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="200" name="Implementaci&#xF3;n" note="" work="288000" start="20150317T120000Z" end="20150409T120000Z" work-start="20150318T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="201" name="Generar c&#xF3;digo" note="" work="288000" start="20150317T120000Z" end="20150409T120000Z" work-start="20150318T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="199" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="202" name="Test" note="" work="43200" start="20150409T120000Z" end="20150413T120000Z" work-start="20150410T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="203" name="Definir casos de prueba" note="" work="28800" start="20150409T120000Z" end="20150411T120000Z" work-start="20150410T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="201" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="204" name="Ejecutar casos de prueba" note="" work="14400" start="20150411T120000Z" end="20150413T120000Z" work-start="20150413T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="203" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="205" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20150413T120000Z" end="20150415T120000Z" work-start="20150414T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="206" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20150413T120000Z" end="20150415T120000Z" work-start="20150414T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="204" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="207" name="Subproyecto AppMoviles" note="" work="432000" start="20150415T120000Z" end="20150520T120000Z" work-start="20150416T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="208" name="Modelo" note="" work="72000" start="20150415T120000Z" end="20150421T120000Z" work-start="20150416T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="209" name="Actualizar modelo de casos de uso" note="" work="14400" start="20150415T120000Z" end="20150416T120000Z" work-start="20150416T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="206" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="210" name="Actualizar diagramas de estructura" note="" work="28800" start="20150416T120000Z" end="20150418T120000Z" work-start="20150417T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="209" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="211" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150418T120000Z" end="20150421T120000Z" work-start="20150420T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="210" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="212" name="Implementaci&#xF3;n" note="" work="288000" start="20150421T120000Z" end="20150514T120000Z" work-start="20150422T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="213" name="Generar c&#xF3;digo" note="" work="288000" start="20150421T120000Z" end="20150514T120000Z" work-start="20150422T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="211" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="214" name="Test" note="" work="43200" start="20150514T120000Z" end="20150518T120000Z" work-start="20150515T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="215" name="Definir casos de prueba" note="" work="28800" start="20150514T120000Z" end="20150516T120000Z" work-start="20150515T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="213" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="216" name="Ejecutar casos de prueba" note="" work="14400" start="20150516T120000Z" end="20150518T120000Z" work-start="20150518T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="215" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="217" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20150518T120000Z" end="20150520T120000Z" work-start="20150519T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="218" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20150518T120000Z" end="20150520T120000Z" work-start="20150519T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="216" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="219" name="Subproyecto WebService" note="" work="302400" start="20150520T120000Z" end="20150613T120000Z" work-start="20150521T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="220" name="Modelo" note="" work="72000" start="20150520T120000Z" end="20150526T120000Z" work-start="20150521T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="221" name="Actualizar modelo de casos de uso" note="" work="14400" start="20150520T120000Z" end="20150521T120000Z" work-start="20150521T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="218" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="222" name="Actualizar diagramas de estructura" note="" work="28800" start="20150521T120000Z" end="20150523T120000Z" work-start="20150522T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="221" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="223" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150523T120000Z" end="20150526T120000Z" work-start="20150525T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="222" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="224" name="Implementaci&#xF3;n" note="" work="144000" start="20150526T120000Z" end="20150606T120000Z" work-start="20150527T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="225" name="Generar c&#xF3;digo" note="" work="144000" start="20150526T120000Z" end="20150606T120000Z" work-start="20150527T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="223" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="226" name="Test" note="" work="57600" start="20150606T120000Z" end="20150611T120000Z" work-start="20150608T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="227" name="Definir casos de prueba" note="" work="28800" start="20150606T120000Z" end="20150609T120000Z" work-start="20150608T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="225" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="228" name="Ejecutar casos de prueba" note="" work="28800" start="20150609T120000Z" end="20150611T120000Z" work-start="20150610T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="227" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="229" name="Gesti&#xF3;n de proyecto" note="" work="28800" start="20150611T120000Z" end="20150613T120000Z" work-start="20150612T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="230" name="Investigar tecnolog&#xED;a a utilizar" note="" work="28800" start="20150611T120000Z" end="20150613T120000Z" work-start="20150612T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="228" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="231" name="Subproyecto AppControlPasaje" note="" work="288000" start="20150613T120000Z" end="20150707T120000Z" work-start="20150615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="232" name="Modelo" note="" work="72000" start="20150613T120000Z" end="20150619T120000Z" work-start="20150615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="233" name="Actualizar modelo de casos de uso" note="" work="14400" start="20150613T120000Z" end="20150615T120000Z" work-start="20150615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="230" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="234" name="Actualizar diagramas de estructura" note="" work="28800" start="20150615T120000Z" end="20150617T120000Z" work-start="20150616T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="233" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="235" name="Actualizar diagramas de comportamiento" note="" work="28800" start="20150617T120000Z" end="20150619T120000Z" work-start="20150618T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="234" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="236" name="Implementaci&#xF3;n" note="" work="144000" start="20150619T120000Z" end="20150701T120000Z" work-start="20150620T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="237" name="Generar c&#xF3;digo" note="" work="144000" start="20150619T120000Z" end="20150701T120000Z" work-start="20150620T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="235" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="238" name="Test" note="" work="57600" start="20150701T120000Z" end="20150706T120000Z" work-start="20150702T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="239" name="Definir casos de prueba" note="" work="28800" start="20150701T120000Z" end="20150703T120000Z" work-start="20150702T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="237" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="240" name="Ejecutar casos de prueba" note="" work="28800" start="20150703T120000Z" end="20150706T120000Z" work-start="20150704T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="239" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="241" name="Gesti&#xF3;n de proyecto" note="" work="14400" start="20150706T120000Z" end="20150707T120000Z" work-start="20150707T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="242" name="Investigar tecnolog&#xED;a a utilizar" note="" work="14400" start="20150706T120000Z" end="20150707T120000Z" work-start="20150707T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="240" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="243" name="Integraci&#xF3;n" note="" work="172800" start="20150707T120000Z" end="20150721T120000Z" work-start="20150708T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="244" name="Modelo" note="" work="57600" start="20150707T120000Z" end="20150711T120000Z" work-start="20150708T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="245" name="Actualizar modelo de arquitectura" note="" work="28800" start="20150707T120000Z" end="20150709T120000Z" work-start="20150708T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="242" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="246" name="Actualizar estructura de base de datos" note="" work="28800" start="20150709T120000Z" end="20150711T120000Z" work-start="20150710T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="245" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="247" name="Test" note="" work="57600" start="20150711T120000Z" end="20150716T120000Z" work-start="20150713T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="248" name="Actualizar plan de testing" note="" work="14400" start="20150711T120000Z" end="20150713T120000Z" work-start="20150713T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="246" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="249" name="Realizar pruebas de integraci&#xF3;n" note="" work="43200" start="20150713T120000Z" end="20150716T120000Z" work-start="20150714T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="248" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="250" name="Despliegue" note="" work="14400" start="20150716T120000Z" end="20150717T120000Z" work-start="20150717T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="251" name="Actualizar plan de despliegue" note="" work="14400" start="20150716T120000Z" end="20150717T120000Z" work-start="20150717T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="249" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="252" name="Gesti&#xF3;n de proyecto" note="" work="43200" start="20150717T120000Z" end="20150721T120000Z" work-start="20150718T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="253" name="Gestionar riesgos" note="" work="14400" start="20150717T120000Z" end="20150718T120000Z" work-start="20150718T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="251" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="254" name="Actualizar planificaci&#xF3;n" note="" work="28800" start="20150718T120000Z" end="20150721T120000Z" work-start="20150720T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="253" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="255" name="Iteraci&#xF3;n 4" note="" work="1123200" start="20150721T120000Z" end="20151019T120000Z" work-start="20150722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="256" name="Subproyecto AppWeb" note="" work="345600" start="20150721T120000Z" end="20150818T120000Z" work-start="20150722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="257" name="Implementaci&#xF3;n" note="" work="288000" start="20150721T120000Z" end="20150813T120000Z" work-start="20150722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="258" name="Generar c&#xF3;digo" note="" work="288000" start="20150721T120000Z" end="20150813T120000Z" work-start="20150722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="254" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="259" name="Test" note="" work="57600" start="20150813T120000Z" end="20150818T120000Z" work-start="20150814T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="260" name="Definir casos de prueba" note="" work="28800" start="20150813T120000Z" end="20150815T120000Z" work-start="20150814T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="258" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="261" name="Ejecutar casos de prueba" note="" work="28800" start="20150815T120000Z" end="20150818T120000Z" work-start="20150817T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="260" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="262" name="Subproyecto AppMoviles" note="" work="201600" start="20150818T120000Z" end="20150903T120000Z" work-start="20150819T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="263" name="Implementaci&#xF3;n" note="" work="144000" start="20150818T120000Z" end="20150829T120000Z" work-start="20150819T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="264" name="Generar c&#xF3;digo" note="" work="144000" start="20150818T120000Z" end="20150829T120000Z" work-start="20150819T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="261" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="265" name="Test" note="" work="57600" start="20150829T120000Z" end="20150903T120000Z" work-start="20150831T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="266" name="Definir casos de prueba" note="" work="28800" start="20150829T120000Z" end="20150901T120000Z" work-start="20150831T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="264" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="267" name="Ejecutar casos de prueba" note="" work="28800" start="20150901T120000Z" end="20150903T120000Z" work-start="20150902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="266" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="268" name="Integraci&#xF3;n" note="" work="576000" start="20150903T120000Z" end="20151019T120000Z" work-start="20150904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="269" name="Implementaci&#xF3;n" note="" work="432000" start="20150903T120000Z" end="20151008T120000Z" work-start="20150904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="270" name="Realizar mapeado en OSM" note="" work="432000" start="20150903T120000Z" end="20151008T120000Z" work-start="20150904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="267" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="271" name="Gesti&#xF3;n de proyecto" note="" work="144000" start="20151008T120000Z" end="20151019T120000Z" work-start="20151009T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="272" name="Investigar tecnolog&#xED;a" note="" work="100800" start="20151008T120000Z" end="20151016T120000Z" work-start="20151009T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="270" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="273" name="Gestionar riesgos" note="" work="14400" start="20151016T120000Z" end="20151017T120000Z" work-start="20151017T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="272" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="274" name="Actualizar planificaci&#xF3;n" note="" work="28800" start="20151016T120000Z" end="20151019T120000Z" work-start="20151017T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="272" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="275" name="Iteraci&#xF3;n 5" note="" work="403200" start="20151019T120000Z" end="20151119T120000Z" work-start="20151020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="276" name="Subproyecto AppUsuarios" note="" work="302400" start="20151019T120000Z" end="20151112T120000Z" work-start="20151020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="277" name="Modelo" note="" work="100800" start="20151019T120000Z" end="20151027T120000Z" work-start="20151020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="278" name="Actualizar modelo de casos de uso" note="" work="28800" start="20151019T120000Z" end="20151021T120000Z" work-start="20151020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="274" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="279" name="Realizar diagramas de estructura" note="" work="28800" start="20151021T120000Z" end="20151023T120000Z" work-start="20151022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="278" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="280" name="Realizar diagramas de comportamiento" note="" work="28800" start="20151023T120000Z" end="20151026T120000Z" work-start="20151024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="279" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="281" name="Realizar prototipo de interfaz de usuario" note="" work="14400" start="20151026T120000Z" end="20151027T120000Z" work-start="20151027T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="280" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="282" name="Implementaci&#xF3;n" note="" work="144000" start="20151027T120000Z" end="20151107T120000Z" work-start="20151028T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="283" name="Generar c&#xF3;digo" note="" work="144000" start="20151027T120000Z" end="20151107T120000Z" work-start="20151028T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="281" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="284" name="Test" note="" work="57600" start="20151107T120000Z" end="20151112T120000Z" work-start="20151109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="285" name="Definir casos de prueba" note="" work="28800" start="20151107T120000Z" end="20151110T120000Z" work-start="20151109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="283" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="286" name="Ejecutar casos de prueba" note="" work="28800" start="20151110T120000Z" end="20151112T120000Z" work-start="20151111T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="285" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="287" name="Integraci&#xF3;n" note="" work="100800" start="20151112T120000Z" end="20151119T120000Z" work-start="20151113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="288" name="Test" note="" work="43200" start="20151112T120000Z" end="20151116T120000Z" work-start="20151113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="289" name="Actualizar plan de testing" note="" work="14400" start="20151112T120000Z" end="20151113T120000Z" work-start="20151113T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="286" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="290" name="Realizar pruebas de integraci&#xF3;n" note="" work="28800" start="20151113T120000Z" end="20151116T120000Z" work-start="20151114T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="289" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="291" name="Despliegue" note="" work="14400" start="20151116T120000Z" end="20151117T120000Z" work-start="20151117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="292" name="Actualizar plan de despliegue" note="" work="14400" start="20151116T120000Z" end="20151117T120000Z" work-start="20151117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="290" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="293" name="Gesti&#xF3;n de proyecto" note="" work="43200" start="20151117T120000Z" end="20151119T120000Z" work-start="20151118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="294" name="Gestionar riesgos" note="" work="14400" start="20151117T120000Z" end="20151118T120000Z" work-start="20151118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="292" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="295" name="Verificar cumplimiento de fase" note="" work="14400" start="20151118T120000Z" end="20151119T120000Z" work-start="20151119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="294" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="296" name="Actualizar planificaci&#xF3;n" note="" work="14400" start="20151118T120000Z" end="20151119T120000Z" work-start="20151119T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="294" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+    </task>
+    <task id="297" name="Interrupci&#xF3;n del proyecto" note="" work="1728000" start="20151119T120000Z" end="20160407T120000Z" work-start="20151120T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="296" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="298" name="Transici&#xF3;n" note="" work="1497600" start="20160407T120000Z" end="20160805T120000Z" work-start="20160408T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="299" name="Modelo" note="" work="432000" start="20160407T120000Z" end="20160512T120000Z" work-start="20160408T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="300" name="Finalizar documentaci&#xF3;n del proyecto" note="" work="432000" start="20160407T120000Z" end="20160512T120000Z" work-start="20160408T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="297" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="301" name="Implementaci&#xF3;n" note="" work="216000" start="20160512T120000Z" end="20160530T120000Z" work-start="20160513T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="302" name="Corregir defectos" note="" work="216000" start="20160512T120000Z" end="20160530T120000Z" work-start="20160513T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="300" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="303" name="Test" note="" work="43200" start="20160530T120000Z" end="20160602T120000Z" work-start="20160531T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="304" name="Actualizar plan de testing" note="" work="14400" start="20160530T120000Z" end="20160531T120000Z" work-start="20160531T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="302" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="305" name="Realizar pruebas de sistema" note="" work="28800" start="20160531T120000Z" end="20160602T120000Z" work-start="20160601T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="304" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="306" name="Despliegue" note="" work="129600" start="20160602T120000Z" end="20160613T120000Z" work-start="20160603T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="307" name="Realizar paquete de despliegue" note="" work="28800" start="20160602T120000Z" end="20160604T120000Z" work-start="20160603T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="305" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="308" name="Realizar manual de usuario" note="" work="100800" start="20160604T120000Z" end="20160613T120000Z" work-start="20160606T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="307" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="309" name="Gesti&#xF3;n de proyecto" note="" work="676800" start="20160613T120000Z" end="20160805T120000Z" work-start="20160614T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="310" name="Gestionar riesgos" note="" work="14400" start="20160613T120000Z" end="20160614T120000Z" work-start="20160614T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="308" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="311" name="Verificar cumplimiento de fase" note="" work="14400" start="20160614T120000Z" end="20160615T120000Z" work-start="20160615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="310" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="312" name="Actualizar planificaci&#xF3;n" note="" work="28800" start="20160614T120000Z" end="20160616T120000Z" work-start="20160615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="310" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="313" name="Armar documentaci&#xF3;n del proyecto" note="" work="619200" start="20160616T120000Z" end="20160805T120000Z" work-start="20160617T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="312" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Sebastian" short-name="S" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="Jeremias" short-name="J" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations/>
+</project>
